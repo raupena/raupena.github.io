@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Playlist</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="navegacion menu">
+            <a href="indexx.html">Inicio</a>
+            <a href="sobre.html">Sobre mí</a>
+            <a href="tablas.html">Tablas</a>
+            <a href="listas.html">Listas</a>
+            <a href="trivia.html">Trivia</a>
+            <a href="playlist2.html">Playlist</a>
+        </div>
+    </div>
+
+    <div class="contenedor-playlist">
+        <div class="barra-lateral">
+            <h2>Mi Playlist</h2>
+            <ul class="lista-canciones">
+                <li><a href="playlist2.html">Bohemian Rhapsody</a></li>
+                <li><a href="playlist2.html?cancion=2">Hotel California</a></li>
+                <li><a href="playlist2.html?cancion=3">Stairway to Heaven</a></li>
+                <li><a href="playlist2.html?cancion=4">Sweet Child O' Mine</a></li>
+                <li><a href="playlist2.html?cancion=5">Imagine</a></li>
+                <li><a href="playlist2.html?cancion=6">Billie Jean</a></li>
+                <li><a href="playlist2.html?cancion=7">Like a Rolling Stone</a></li>
+                <li><a href="playlist2.html?cancion=8">Smells Like Teen Spirit</a></li>
+            </ul>
+        </div>
+
+        <div class="area-principal">
+            <h1>Reproductor de Música</h1>
+            <div class="reproductor">
+                <p class="mensaje-reproductor">Elegí una canción de la lista para escucharla</p>
+                <div id="contenido-cancion"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pie-pagina">
+        <p>© 2025 - Mi Identikit</p>
+        <a href="#" class="boton-arriba" title="Volver arriba">↑</a>
+    </div>
+
+    <script>
+
+        const canciones = {
+            1: {
+                nombre: "Bohemian Rhapsody - Queen",
+                spotify: "https://open.spotify.com/embed/track/4u7EnebtmKWzUH433cf5Qv?utm_source=generator"
+            },
+            2: {
+                nombre: "Hotel California - Eagles",
+                spotify: "https://open.spotify.com/embed/track/40riOy7x9W7GXjyGp4pjAv?utm_source=generator"
+            },
+            3: {
+                nombre: "Stairway to Heaven - Led Zeppelin",
+                spotify: "https://open.spotify.com/embed/track/5CQ30WqJwcep0pYcV4AMNc?utm_source=generator"
+            },
+            4: {
+                nombre: "Sweet Child O' Mine - Guns N' Roses",
+                spotify: "https://open.spotify.com/embed/track/7snQQk1zcKl8gZ92AnueaW?utm_source=generator"
+            },
+            5: {
+                nombre: "Imagine - John Lennon",
+                spotify: "https://open.spotify.com/embed/track/7pKfPomDEeI4TPT6EOYjn9?utm_source=generator"
+            },
+            6: {
+                nombre: "Billie Jean - Michael Jackson",
+                spotify: "https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5?utm_source=generator"
+            },
+            7: {
+                nombre: "Like a Rolling Stone - Bob Dylan",
+                spotify: "https://open.spotify.com/embed/track/3AhXZa8sUQht0UEdBJgpGc?utm_source=generator"
+            },
+            8: {
+                nombre: "Smells Like Teen Spirit - Nirvana",
+                spotify: "https://open.spotify.com/embed/track/5ghIJDpPoe3CfHMGu71E6T?utm_source=generator"
+            }
+        };
+
+        function obtenerParametroURL(nombre) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nombre);
+        }
+
+        function cargarCancion() {
+            const numeroCancion = obtenerParametroURL('cancion');
+            const contenedor = document.getElementById('contenido-cancion');
+            const mensaje = document.querySelector('.mensaje-reproductor');
+
+            if (numeroCancion && canciones[numeroCancion]) {
+                const cancion = canciones[numeroCancion];
+                mensaje.textContent = `Reproduciendo: ${cancion.nombre}`;
+                contenedor.innerHTML = `
+                    <iframe style="border-radius:12px" 
+                        src="${cancion.spotify}" 
+                        width="100%" 
+                        height="352" 
+                        frameborder="0" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                `;
+            } else {
+                mensaje.textContent = "Elegí una canción de la lista para escucharla";
+                contenedor.innerHTML = '';
+            }
+        }
+
+        window.addEventListener('load', cargarCancion);
+    </script>
+
+</body>
+</html>
