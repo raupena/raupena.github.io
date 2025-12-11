@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Salvando Patitas</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header class="scroll-animate">
+        <div class="container">
+            <div class="logo scroll-animate-left">
+                <h1>🐾 Salvando Patitas</h1>
+                <p class="tagline">Rescate y Adopción Responsable</p>
+            </div>
+            <nav class="scroll-animate-right">
+                <ul>
+                    <li><a href="ong.html">Inicio</a></li>
+                    <li><a href="adopciones.html">Adopciones</a></li>
+                    <li><a href="donaciones.html">Colaborá</a></li>
+                    <li><a href="contactoz.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-header scroll-animate">
+            <div class="container">
+                <h1 class="scroll-animate-left">Contactanos</h1>
+                <p class="scroll-animate delay-2">Estamos acá para responderte y ayudarte</p>
+            </div>
+        </section>
+
+        <section class="contacto-info scroll-animate">
+            <div class="container">
+                <div class="info-grid">
+
+                    <div class="info-card scroll-animate-left delay-1">
+                        <div class="icon">📍</div>
+                        <h3>Dirección</h3>
+                        <p>Las Margaritas 1234<br>Zona Norte<br>Buenos Aires, Argentina</p>
+                    </div>
+
+                    <div class="info-card scroll-animate delay-2">
+                        <div class="icon">📱</div>
+                        <h3>Teléfono y WhatsApp</h3>
+                        <p><a href="https://api.whatsapp.com/send?phone=5491135483194&text=Hola%20Salvando%20Patitas" target="_blank">+54 9 (11) 3548-3194</a></p>
+                        <p class="horario">Disponible de lunes a domingo</p>
+                    </div>
+
+                    <div class="info-card scroll-animate delay-3">
+                        <div class="icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@salvandopatitas.org">info@salvandopatitas.org</a></p>
+                        <p class="horario">Respondemos en 24 a 48 horas</p>
+                    </div>
+
+                    <div class="info-card scroll-animate-right delay-4">
+                        <div class="icon">🕐</div>
+                        <h3>Horarios de Visita</h3>
+                        <p><strong>Lunes a Viernes:</strong> 10 AM - 6 PM</p>
+                        <p><strong>Sábados y Domingos:</strong> 10 AM - 5 PM</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario-contacto scroll-animate">
+            <div class="container">
+                <div class="form-wrapper scroll-animate-left">
+                    <h2 class="scroll-animate">Envianos un Mensaje</h2>
+
+                    <form id="contactForm" class="contact-form" action="gracias.html" method="GET">
+
+                        <div class="form-group scroll-animate-left delay-1">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group scroll-animate delay-2">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group scroll-animate delay-3">
+                            <label for="telefono">Número</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+
+                        <div class="form-group scroll-animate-right delay-4">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">-- Seleccionar --</option>
+                                <option value="adopcion">Quiero Adoptar</option>
+                                <option value="voluntario">Quiero Ser Voluntario</option>
+                                <option value="donacion">Información de Donaciones</option>
+                                <option value="rescate">Reportar un Animal en Peligro</option>
+                                <option value="general">Consulta General</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group scroll-animate delay-5">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary scroll-animate-right delay-5">Enviar Mensaje</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="preguntas-frecuentes scroll-animate">
+            <div class="container">
+                <h2 class="scroll-animate-left">Preguntas Frecuentes</h2>
+                <div class="faq-list">
+
+                    <div class="faq-item scroll-animate-left delay-1">
+                        <h3>¿Cuál es el proceso de adopción?</h3>
+                        <p>Primero conocés al animal...</p>
+                    </div>
+
+                    <div class="faq-item scroll-animate delay-2">
+                        <h3>¿Pueden traer el animal a domicilio?</h3>
+                        <p>Sí, para adopciones en zona norte podemos coordinar.</p>
+                    </div>
+
+                    <div class="faq-item scroll-animate delay-3">
+                        <h3>¿Los animales vienen esterilizados?</h3>
+                        <p>Sí, todos nuestros animales para adoptar están esterilizados.</p>
+                    </div>
+
+                    <div class="faq-item scroll-animate-right delay-4">
+                        <h3>¿Puedo devolver el animal?</h3>
+                        <p>Sí, queremos que sea una adopción para siempre.</p>
+                    </div>
+
+                    <div class="faq-item scroll-animate-left delay-1">
+                        <h3>¿Necesito tener patio?</h3>
+                        <p>No es obligatorio, depende del caso.</p>
+                    </div>
+
+                    <div class="faq-item scroll-animate delay-2">
+                        <h3>¿Cómo ser voluntario?</h3>
+                        <p>Contactanos con tu disponibilidad.</p>
+                    </div>
+
+                    <div class="faq-item scroll-animate delay-3">
+                        <h3>¿Aceptan donaciones?</h3>
+                        <p>Sí, pero coordinamos antes de recibirlas.</p>
+                    </div>
+
+                    <div class="faq-item scroll-animate-right delay-4">
+                        <h3>¿Cómo reportar un animal?</h3>
+                        <p>WhatsApp + ubicación y detalles.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="redes-sociales scroll-animate">
+            <div class="container">
+                <h2 class="scroll-animate-left">Seguinos en Redes</h2>
+                <p class="scroll-animate delay-2">Compartimos historias y eventos.</p>
+                <div class="social-icons scroll-animate-right delay-3">
+                    <a href="https://facebook.com/salvandopatitas" target="_blank" class="social-icon">
+                        <span>f</span> Facebook
+                    </a>
+                    <a href="https://instagram.com/salvandopatitas" target="_blank" class="social-icon">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icon">
+                        <span>▶️</span> YouTube
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="social-icon">
+                        <span>♪</span> TikTok
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="scroll-animate">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section scroll-animate-left">
+                    <h4>Salvando Patitas</h4>
+                    <p>Asociación para el rescate y adopción responsable de animales.</p>
+                </div>
+                <div class="footer-section scroll-animate-right" style="text-align: right;">
+                    <h4>Rápidos Links</h4>
+                    <ul>
+                        <li><a href="adopciones.html">Adoptar</a></li>
+                        <li><a href="donaciones.html">Colaborar</a></li>
+                        <li><a href="contactoz.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom scroll-animate delay-3">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("scroll-visible");
+                    }
+                });
+            }, observerOptions);
+
+            const elementos = document.querySelectorAll(
+                ".scroll-animate, .scroll-animate-left, .scroll-animate-right"
+            );
+
+            elementos.forEach(el => observer.observe(el));
+
+        });
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales para Adoptar - Salvando Patitas</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <header class="scroll-animate">
+        <div class="container">
+            <div class="logo scroll-animate-left">
+                <h1>🐾 Salvando Patitas</h1>
+                <p class="tagline">Rescate y Adopción Responsable</p>
+            </div>
+            <nav class="scroll-animate-right">
+                <ul>
+                    <li><a href="ong.html">Inicio</a></li>
+                    <li><a href="adopciones.html" class="active">Adopciones</a></li>
+                    <li><a href="donaciones.html">Colaborá</a></li>
+                    <li><a href="contactoz.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-header scroll-animate">
+            <div class="container">
+                <h1 class="scroll-animate-left">Nuestros Amigos Esperan</h1>
+                <p class="scroll-animate delay-2">Conocé a los animales que buscan su hogar definitivo</p>
+            </div>
+        </section>
+
+        <section class="animales scroll-animate">
+            <div class="container">
+
+                <div class="filtros scroll-animate-left">
+                    <button class="filter-btn active" onclick="filtrarAnimales('perros')">Perros</button>
+                    <button class="filter-btn" onclick="filtrarAnimales('gatos')">Gatos</button>
+                </div>
+
+                <div class="animales-grid">
+
+                    <div class="animal-card scroll-animate-left delay-1" data-tipo="perros">
+                        <img src="tobi.jfif" alt="Toby">
+                        <div class="animal-info">
+                            <h3>Toby</h3>
+                            <p class="tipo">Perro Mestizo</p>
+                            <p class="edad">3 años</p>
+                            <p class="descripcion">Toby es un perro grande, sociable y muy juguetón...</p>
+                            <a href="contactoz.html" class="btn-adopteme">Quiero Conocerlo</a>
+                        </div>
+                    </div>
+
+                    <div class="animal-card scroll-animate delay-2" data-tipo="gatos">
+                        <img src="mimi.jfif" alt="Mimi">
+                        <div class="animal-info">
+                            <h3>Mimi</h3>
+                            <p class="tipo">Gato blanco</p>
+                            <p class="edad">Meses</p>
+                            <p class="descripcion">Mimi es una gata tranquila y cariñosa...</p>
+                            <a href="contactoz.html" class="btn-adopteme">Quiero Conocerla</a>
+                        </div>
+                    </div>
+
+                    <div class="animal-card scroll-animate delay-3" data-tipo="perros">
+                        <img src="rocky.jfif" alt="Rocky">
+                        <div class="animal-info">
+                            <h3>Rocky</h3>
+                            <p class="tipo">Mestizo y juguetón</p>
+                            <p class="edad">5 años</p>
+                            <p class="descripcion">Rocky es un gigante de buen corazón...</p>
+                            <a href="contactoz.html" class="btn-adopteme">Quiero Conocerlo</a>
+                        </div>
+                    </div>
+
+                    <div class="animal-card scroll-animate-right delay-4" data-tipo="gatos">
+                        <img src="lunar.jfif" alt="Lunar">
+                        <div class="animal-info">
+                            <h3>Lunar</h3>
+                            <p class="tipo">Gato Atigrado</p>
+                            <p class="edad">1 año</p>
+                            <p class="descripcion">Lunar es un gatito joven, travieso...</p>
+                            <a href="contactoz.html" class="btn-adopteme">Quiero Conocerlo</a>
+                        </div>
+                    </div>
+
+                    <div class="animal-card scroll-animate-left delay-2" data-tipo="perros">
+                        <img src="princesa.jfif" alt="Princesa">
+                        <div class="animal-info">
+                            <h3>Princesa</h3>
+                            <p class="tipo">Perro Pequeño Mix</p>
+                            <p class="edad">6 años</p>
+                            <p class="descripcion">Princesa es una perrita miedosa...</p>
+                            <a href="contactoz.html" class="btn-adopteme">Quiero Conocerla</a>
+                        </div>
+                    </div>
+
+                    <div class="animal-card scroll-animate-right delay-3" data-tipo="gatos">
+                        <img src="felix.jfif" alt="Felix">
+                        <div class="animal-info">
+                            <h3>Félix</h3>
+                            <p class="tipo">Gato tricolor</p>
+                            <p class="edad">2 semanas</p>
+                            <p class="descripcion">Félix es un gato dormilón...</p>
+                            <a href="contactoz.html" class="btn-adopteme">Quiero Conocerlo</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="proceso-adopcion scroll-animate">
+            <div class="container">
+                <h2 class="scroll-animate-left">Nuestro Proceso de Adopción</h2>
+                <div class="pasos">
+
+                    <div class="paso scroll-animate-left delay-1">
+                        <div class="numero">1</div>
+                        <h3>Conocé al Animal</h3>
+                        <p>Visitá nuestro refugio...</p>
+                    </div>
+
+                    <div class="paso scroll-animate delay-2">
+                        <div class="numero">2</div>
+                        <h3>Evaluación</h3>
+                        <p>Completamos un formulario...</p>
+                    </div>
+
+                    <div class="paso scroll-animate delay-3">
+                        <div class="numero">3</div>
+                        <h3>Documentación</h3>
+                        <p>Preparamos vacunas, microchip y acta...</p>
+                    </div>
+
+                    <div class="paso scroll-animate-right delay-4">
+                        <div class="numero">4</div>
+                        <h3>Bienvenida</h3>
+                        <p>Tu nuevo compañero llega a su hogar.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="scroll-animate">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section scroll-animate-left">
+                    <h4>Salvando Patitas</h4>
+                    <p>Asociación para el rescate y adopción responsable de animales.</p>
+                </div>
+                <div class="footer-section scroll-animate-right" style="text-align: right;">
+                    <h4>Rápidos Links</h4>
+                    <ul>
+                        <li><a href="adopciones.html">Adoptar</a></li>
+                        <li><a href="donaciones.html">Colaborar</a></li>
+                        <li><a href="contactoz.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom scroll-animate delay-3">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function filtrarAnimales(tipo) {
+            var cards = document.getElementsByClassName('animal-card');
+            var botones = document.getElementsByClassName('filter-btn');
+            
+            for (var i = 0; i < botones.length; i++) {
+                botones[i].classList.remove('active');
+            }
+            
+            event.target.classList.add('active');
+            
+            for (var i = 0; i < cards.length; i++) {
+                if (cards[i].getAttribute('data-tipo') == tipo) {
+                    cards[i].style.display = 'block';
+                } else {
+                    cards[i].style.display = 'none';
+                }
+            }
+        }
+        
+        window.onload = function() {
+            filtrarAnimales('perros');
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("scroll-visible");
+                    }
+                });
+            }, observerOptions);
+
+            const elementos = document.querySelectorAll(
+                ".scroll-animate, .scroll-animate-left, .scroll-animate-right"
+            );
+
+            elementos.forEach(el => observer.observe(el));
+
+        });
+    </script>
+
+</body>
+</html>
+
+
